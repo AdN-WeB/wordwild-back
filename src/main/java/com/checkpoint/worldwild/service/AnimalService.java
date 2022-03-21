@@ -45,6 +45,7 @@ public class AnimalService {
 		animal.setWeight(animalDto.getWeight());
 		animal.setLife(animalDto.getLife());
 		animal.setFeed(animalDto.getFeed());
+		animal.setWikiLink(animalDto.getWikiLink());
 		return animalRepository.save(animal);
 	}
 	
@@ -62,6 +63,7 @@ public class AnimalService {
 				animal.setWeight(animalDto.getWeight());
 				animal.setLife(animalDto.getLife());
 				animal.setFeed(animalDto.getFeed());
+				animal.setWikiLink(animalDto.getWikiLink());
 				return animalRepository.save(animal);
 			}else {
 				Animal animal =optAnimal.get();
@@ -71,6 +73,7 @@ public class AnimalService {
 				animal.setWeight(animalDto.getWeight());
 				animal.setLife(animalDto.getLife());
 				animal.setFeed(animalDto.getFeed());
+				animal.setWikiLink(animalDto.getWikiLink());
 				return animalRepository.save(animal);
 			}
 		}else throw new ResponseStatusException(HttpStatus.NOT_FOUND);

@@ -7,6 +7,7 @@ public class AnimalDto {
 //DTO attributes
 	
 	private String imageUrl;
+	private String wikiLink;
 	
 	@NotBlank
 	@Size(min=3, max=100)
@@ -88,5 +89,14 @@ public class AnimalDto {
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
+
+	public String getWikiLink() {
+		return wikiLink;
+	}
+
+	public void setWikiLink(String wikiLink) {
+		this.wikiLink = wikiLink;
+	}
+	
 	
 }
