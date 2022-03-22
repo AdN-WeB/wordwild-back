@@ -17,7 +17,7 @@ import com.checkpoint.worldwild.service.FileUploaderService;
 
 @RestController
 @CrossOrigin(origins="*", maxAge = 3600)
-@RequestMapping("/wildworld/file")
+@RequestMapping("/worldwild/file")
 public class FileController {
 
 	@Autowired
